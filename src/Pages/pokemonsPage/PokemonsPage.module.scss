@@ -1,0 +1,41 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  padding: 5px;
+}
+
+.oneCard{
+  display: grid;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.btn {
+  border-radius: 3em;
+  border-color: red;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #5e0f0f;
+  background: {
+    image: linear-gradient(to bottom, transparent 50%, #b25858 50%);
+    position: 0 0;
+    size: 210%;
+  }
+  transition: background 150ms ease-in-out, color 150ms ease-in-out;
+
+  &:hover {
+    color: #fff;
+    font-weight: bold;
+    background-position: 0 100%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -22;
+  min-width: 100%;
+  min-height: 100%;
+}
